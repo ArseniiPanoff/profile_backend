@@ -3,9 +3,8 @@ package com.arsenii.profile_backend
 import io.github.cdimascio.dotenv.Dotenv
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
-@SpringBootApplication(exclude = [DataSourceAutoConfiguration::class])
+@SpringBootApplication
 class ProfileBackendApplication
 
 fun main(args: Array<String>) {

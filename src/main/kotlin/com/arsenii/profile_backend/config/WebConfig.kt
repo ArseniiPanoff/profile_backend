@@ -11,6 +11,7 @@ class WebConfig : WebMvcConfigurer {
     @Bean
     fun corsConfigurer(): WebMvcConfigurer {
         return object : WebMvcConfigurer {
+            @Override
             override fun addCorsMappings(registry: CorsRegistry) {
                 registry.addMapping("/**")
                     .allowedOrigins("http://localhost:3000") // Update with your frontend URL

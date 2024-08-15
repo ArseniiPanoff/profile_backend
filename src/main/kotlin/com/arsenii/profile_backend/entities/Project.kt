@@ -24,7 +24,7 @@ data class Project(
     @CollectionTable(name = "project_contacts", joinColumns = [JoinColumn(name = "project_id")])
     @MapKeyColumn(name = "name")
     @Column(name = "link")
-    val contacts: Map<String, String> = emptyMap(),
+    val contacts: Map<String, String>? = null,
 
     @Lob
     @Column(name = "pdf", columnDefinition = "TEXT")
